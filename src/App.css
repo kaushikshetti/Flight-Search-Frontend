@@ -1,0 +1,123 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.search-form {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.input-field {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.loading {
+  text-align: center;
+  color: #666;
+  padding: 2rem;
+}
+
+.flights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.flight-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.flight-card:hover {
+  transform: translateY(-5px);
+}
+
+.flight-header {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.flight-details {
+  padding: 1rem;
+}
+
+.route {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.time-info {
+  margin-bottom: 1rem;
+}
+
+.label {
+  color: #666;
+  margin-right: 0.5rem;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: #28a745;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.seats {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.no-flights {
+  text-align: center;
+  color: #666;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .search-form {
+    flex-direction: column;
+  }
+  
+  .input-field {
+    width: 100%;
+  }
+}
